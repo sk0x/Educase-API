@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "716822b2-943b-4103-befe-65e68246a6ef",
+		"name": "Educase India School API Copy 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39611960"
+	},
+	"item": [
+		{
+			"name": "List Schools (proximity)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://educase-api-nmgg.onrender.com/api/v1/listSchools?latitude=34.7&longitude=-118.0",
+					"protocol": "https",
+					"host": [
+						"educase-api-nmgg",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "34.7"
+						},
+						{
+							"key": "longitude",
+							"value": "-118.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new school",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Greenwood Elementary School\", \n    \"address\": \"123 Oak Street, Springfield\", \n    \"longitude\": -74.123456, \n    \"latitude\": 40.678901   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://educase-api-nmgg.onrender.com/api/v1/addSchool"
+			},
+			"response": []
+		}
+	]
+}
