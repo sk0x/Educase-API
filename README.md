@@ -1,6 +1,8 @@
 ## Educase API
 ### *First request to the server can take upto 50 sec to a min because render put services in sleep after 15mins of inactivity. I request you give a min to your first request then everything will run smoothly*
 
+[POSTMAN COLLECTION](https://github.com/sk0x/Educase-API/blob/main/Educase%20India%20School%20API.postman_collection.json)
+
 A RESTful API for managing school records and retrieving nearby schools based on geographic coordinates. Built with Node.js, Express, and MySQL.
 
 ### Features
