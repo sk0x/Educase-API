@@ -27,7 +27,7 @@ A RESTful API for managing school records and retrieving nearby schools based on
 
 ## Endpoints
 
-1. `POST /api/v1/addSchool`
+1. `POST https://educase-api-nmgg.onrender.com/api/v1/addSchool`
 Adds a new school to the database.
 
 #### Request Body:
@@ -53,7 +53,7 @@ Longitude and latitude must be valid floating-point numbers.
 
 `400 Bad Request if validation fails.`
 
-2. `GET /api/v1/listSchools?longitude=77.5946&latitude=12.9716`
+2. `GET https://educase-api-nmgg.onrender.com/api/v1/listSchools?longitude=77.5946&latitude=12.9716`
 
 Returns a list of schools sorted by distance from the given coordinates.
 
